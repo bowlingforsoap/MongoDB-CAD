@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.MergeAction" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/MergeAction.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="220" x="25" y="270"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.LinkAction" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/LinkAction.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="220" x="285" y="270"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.Action" 
+    project="Diploma pre0.1" file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/Action.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="220" x="155" y="77"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.HierarchyMergeAction" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/HierarchyMergeAction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="220" x="25" y="499"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="5">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

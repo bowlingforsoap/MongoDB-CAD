@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/AdditionalRestrictions"
+	xmlns:tns="http://www.example.org/AdditionalRestrictions"
+	elementFormDefault="qualified">
+	<element name="AdditionalRestrictions">
+		<complexType >
+			<sequence>
+				<element name="atomic" type="tns:atomic" minOccurs="0"
+					maxOccurs="unbounded" />
+				<element name="atomicityLink" type="tns:atomicityLink"
+					minOccurs="0" maxOccurs="unbounded" />
+				<element name="cardinality" type="tns:cardinality"
+					minOccurs="0" maxOccurs="unbounded" />
+				<element name="multiplicity" type="tns:multiplicity"
+					minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>	
+	</element>
+
+	<complexType name="atomic">
+		<attribute name="objectXmiID" type="string" use="required" />
+	</complexType>
+
+	<complexType name="atomicityLink">
+		<sequence>
+			<element name="subjectXmiID" type="string" minOccurs="2"
+				maxOccurs="2" />
+		</sequence>
+	</complexType>
+
+	<complexType name="multiplicity">
+		<attribute name="upperValue" fixed="few" />
+		<attribute name="propertyXmiID" type="string" use="required" />
+	</complexType>
+
+	<complexType name="cardinality">
+		<sequence>
+			<element name="property" minOccurs="1" maxOccurs="unbounded">
+				<complexType>
+					<attribute name="propertyXmiID" type="string" use="required" />
+					<attribute name='maxAssumedCardinality' type='int' use="required" />
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="objectXmiID" type="string" use="required" />
+	</complexType>
+
+</schema>

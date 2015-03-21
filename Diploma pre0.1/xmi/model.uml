@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_3NvKcOooEeOc-7BBnkm-Pw" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_FCiO4OpcEeO7_IgdL3V7qw" name="Person" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VMxo4OpcEeO7_IgdL3V7qw" name="first" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aybCwOpcEeO7_IgdL3V7qw" name="middle" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rBEboOpcEeO7_IgdL3V7qw" name="last" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6fvJEOpcEeO7_IgdL3V7qw" name="login" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8Ks2EOpcEeO7_IgdL3V7qw" name="pass" visibility="protected"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__H5nAOpcEeO7_IgdL3V7qw" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_O4B34OpdEeO7_IgdL3V7qw" general="_FCiO4OpcEeO7_IgdL3V7qw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__evZsOpcEeO7_IgdL3V7qw" name="Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PbFhoOpdEeO7_IgdL3V7qw" general="_FCiO4OpcEeO7_IgdL3V7qw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GqqN0OpdEeO7_IgdL3V7qw" name="active" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JnKbMOpdEeO7_IgdL3V7qw" name="startDate" visibility="protected"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cPoyMOpdEeO7_IgdL3V7qw" name="Policy" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fMeWwOpdEeO7_IgdL3V7qw" name="state" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u9aDcOpeEeO7_IgdL3V7qw" name="underwriting" visibility="protected" type="_g4RxQOpdEeO7_IgdL3V7qw" aggregation="composite" association="_u9aqgOpeEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9aDcepeEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u9aDcupeEeO7_IgdL3V7qw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cD5KUOpfEeO7_IgdL3V7qw" name="item" visibility="protected" type="_CY5y0OpfEeO7_IgdL3V7qw" aggregation="composite" association="_cD6YcOpfEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cD5KUepfEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cD5KUupfEeO7_IgdL3V7qw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UGPh0OpgEeO7_IgdL3V7qw" name="coverage" visibility="protected" type="__8WbYOpfEeO7_IgdL3V7qw" aggregation="composite" association="_UGQI4OpgEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UGPh0epgEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UGPh0upgEeO7_IgdL3V7qw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AUVRYPSDEeOgVs0s6F3mdw" name="customer" type="__H5nAOpcEeO7_IgdL3V7qw" association="_AUVRY_SDEeOgVs0s6F3mdw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AUVRYfSDEeOgVs0s6F3mdw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AUVRYvSDEeOgVs0s6F3mdw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_g4RxQOpdEeO7_IgdL3V7qw" name="Underwriting">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qyU_kOpdEeO7_IgdL3V7qw" name="employee" visibility="protected" type="__evZsOpcEeO7_IgdL3V7qw" association="_qyVmoOpdEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qyU_kepdEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qyU_kupdEeO7_IgdL3V7qw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qnE78PScEeOgVs0s6F3mdw" name="customer" type="__H5nAOpcEeO7_IgdL3V7qw" association="_qnE78_ScEeOgVs0s6F3mdw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qnE78fScEeOgVs0s6F3mdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qnE78vScEeOgVs0s6F3mdw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qyVmoOpdEeO7_IgdL3V7qw" name="" memberEnd="_qyVmoepdEeO7_IgdL3V7qw _qyU_kOpdEeO7_IgdL3V7qw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qyVmoepdEeO7_IgdL3V7qw" name="underwriting" type="_g4RxQOpdEeO7_IgdL3V7qw" association="_qyVmoOpdEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qyVmoupdEeO7_IgdL3V7qw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qyVmo-pdEeO7_IgdL3V7qw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u9aqgOpeEeO7_IgdL3V7qw" name="policy_underwriting_1" memberEnd="_u9aqgepeEeO7_IgdL3V7qw _u9aDcOpeEeO7_IgdL3V7qw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u9aqgepeEeO7_IgdL3V7qw" name="policy" type="_cPoyMOpdEeO7_IgdL3V7qw" association="_u9aqgOpeEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9aqgupeEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u9aqg-peEeO7_IgdL3V7qw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_CY5y0OpfEeO7_IgdL3V7qw" name="Item"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EcqaUOpfEeO7_IgdL3V7qw" clientDependency="_g3DTEO2bEeOU7dWr60eUXQ" name="Car">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_g3DTEO2bEeOU7dWr60eUXQ" name="InterfaceRealization1" client="_EcqaUOpfEeO7_IgdL3V7qw" supplier="_CY5y0OpfEeO7_IgdL3V7qw" contract="_CY5y0OpfEeO7_IgdL3V7qw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FGn9UOpfEeO7_IgdL3V7qw" clientDependency="_YuaLQOsaEeOXEby2YacT_g" name="House"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cD6YcOpfEeO7_IgdL3V7qw" name="policy_item_1" visibility="protected" memberEnd="_cD6YcepfEeO7_IgdL3V7qw _cD5KUOpfEeO7_IgdL3V7qw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cD6YcepfEeO7_IgdL3V7qw" name="policy" type="_cPoyMOpdEeO7_IgdL3V7qw" association="_cD6YcOpfEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cD6YcupfEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cD6Yc-pfEeO7_IgdL3V7qw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__8WbYOpfEeO7_IgdL3V7qw" name="Coverage" visibility="protected">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DQMxwOpgEeO7_IgdL3V7qw" name="type" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lOZVkOpgEeO7_IgdL3V7qw" name="rate" visibility="protected" type="_jOWwcOpgEeO7_IgdL3V7qw" aggregation="composite" association="_lOZ8oOpgEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lOZVkepgEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lOZVkupgEeO7_IgdL3V7qw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EN8zcOpgEeO7_IgdL3V7qw" name="LimitedCoverage">
+    <generalization xmi:type="uml:Generalization" xmi:id="_QBsuUOpgEeO7_IgdL3V7qw" general="__8WbYOpfEeO7_IgdL3V7qw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7z8mIOpgEeO7_IgdL3V7qw" name="limit" visibility="protected"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Lvw_EOpgEeO7_IgdL3V7qw" name="DeductableCoverage">
+    <generalization xmi:type="uml:Generalization" xmi:id="_QcmhoOpgEeO7_IgdL3V7qw" general="__8WbYOpfEeO7_IgdL3V7qw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AVI5YOphEeO7_IgdL3V7qw" name="deductable" visibility="protected"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UGQI4OpgEeO7_IgdL3V7qw" name="policy_coverage_1" memberEnd="_UGQI4epgEeO7_IgdL3V7qw _UGPh0OpgEeO7_IgdL3V7qw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UGQI4epgEeO7_IgdL3V7qw" name="policy" type="_cPoyMOpdEeO7_IgdL3V7qw" association="_UGQI4OpgEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UGQI4upgEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UGQI4-pgEeO7_IgdL3V7qw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jOWwcOpgEeO7_IgdL3V7qw" name="Rate">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_joRP0OphEeO7_IgdL3V7qw" name="rate" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_laQK0OphEeO7_IgdL3V7qw" name="date" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nNrQQOphEeO7_IgdL3V7qw" name="employee" visibility="protected" type="__evZsOpcEeO7_IgdL3V7qw" association="_nNvhsOphEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nNrQQephEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nNrQQuphEeO7_IgdL3V7qw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lOZ8oOpgEeO7_IgdL3V7qw" name="coverage_rate_1" memberEnd="_lOZ8oepgEeO7_IgdL3V7qw _lOZVkOpgEeO7_IgdL3V7qw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lOZ8oepgEeO7_IgdL3V7qw" name="coverage" type="__8WbYOpfEeO7_IgdL3V7qw" association="_lOZ8oOpgEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lOZ8oupgEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lOZ8o-pgEeO7_IgdL3V7qw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nNvhsOphEeO7_IgdL3V7qw" name="rate_employee_1" memberEnd="_nNvhsephEeO7_IgdL3V7qw _nNrQQOphEeO7_IgdL3V7qw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nNvhsephEeO7_IgdL3V7qw" name="rate" type="_jOWwcOpgEeO7_IgdL3V7qw" association="_nNvhsOphEeO7_IgdL3V7qw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nNvhsuphEeO7_IgdL3V7qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nNvhs-phEeO7_IgdL3V7qw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_YuaLQOsaEeOXEby2YacT_g" name="HouseItem" client="_FGn9UOpfEeO7_IgdL3V7qw" supplier="_CY5y0OpfEeO7_IgdL3V7qw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AUVRY_SDEeOgVs0s6F3mdw" name="policy_customer_1" memberEnd="_AUVRZPSDEeOgVs0s6F3mdw _AUVRYPSDEeOgVs0s6F3mdw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AUVRZPSDEeOgVs0s6F3mdw" name="policy" type="_cPoyMOpdEeO7_IgdL3V7qw" association="_AUVRY_SDEeOgVs0s6F3mdw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AUVRZfSDEeOgVs0s6F3mdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AUVRZvSDEeOgVs0s6F3mdw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qnE78_ScEeOgVs0s6F3mdw" name="underwriting_customer_1" memberEnd="_qnE79PScEeOgVs0s6F3mdw _qnE78PScEeOgVs0s6F3mdw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qnE79PScEeOgVs0s6F3mdw" name="underwriting" type="_g4RxQOpdEeO7_IgdL3V7qw" association="_qnE78_ScEeOgVs0s6F3mdw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qnE79fScEeOgVs0s6F3mdw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qnE79vScEeOgVs0s6F3mdw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

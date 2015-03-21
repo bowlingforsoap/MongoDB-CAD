@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="net"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/commons-beanutils-1.9.2/commons-beanutils-1.9.2.jar" sourcepath="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/commons-beanutils-1.9.2/commons-beanutils-1.9.2-sources.jar"/>
+	<classpathentry kind="lib" path="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/commons-logging-1.1.3/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/commons-logging-1.1.3/commons-logging-adapters-1.1.3.jar"/>
+	<classpathentry kind="lib" path="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/commons-logging-1.1.3/commons-logging-api-1.1.3.jar"/>
+	<classpathentry kind="lib" path="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/commons-collections-3.2.1/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/mongo-java-driver-2.12.2.jar" sourcepath="V:/studies/Бакалавр. Дипломная работа/доп библиотеки/mongo-java-driver-2.12.2-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

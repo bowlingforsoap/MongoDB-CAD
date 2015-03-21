@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.states.AssociationState" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/states/AssociationState.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-1" y="365"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.states.HierarchyState" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/states/HierarchyState.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="255" y="365"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.states.State" project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/states/State.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="261" width="216" x="19" y="154"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="4">    
+    <bendpoint x="255" y="334"/>    
+    <bendpoint x="130" y="334"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <association id="5">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="6" name="substitutedBy"/>      
+      <multiplicity id="7" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="8">    
+    <bendpoint x="-1" y="331"/>    
+    <bendpoint x="129" y="331"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

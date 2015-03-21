@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Rules.xsd">
+	<rule>
+		<result xsi:type="hierarchyMergeAction">
+			<dflt>false</dflt>
+			<asSubDoc>false</asSubDoc>
+			<mergeChildren>true</mergeChildren>
+		</result>
+		<state xsi:type="hierarchyState">
+			<value>true</value>
+			<name>RelationsOnlyToRoot</name>
+		</state>
+	</rule>
+</Rules>

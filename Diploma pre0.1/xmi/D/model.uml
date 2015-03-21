@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_hGCRoOsnEeOXEby2YacT_g" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_gwnNQO4yEeOU7dWr60eUXQ" name="Class1">
+    <generalization xmi:type="uml:Generalization" xmi:id="_xIS0EO43EeOU7dWr60eUXQ" general="_iVL-YO4yEeOU7dWr60eUXQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_iVL-YO4yEeOU7dWr60eUXQ" name="Interface1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_z_56YO43EeOU7dWr60eUXQ" name="Class2">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0gPnUO43EeOU7dWr60eUXQ" general="_gwnNQO4yEeOU7dWr60eUXQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4XYQ8O43EeOU7dWr60eUXQ" name="Class3">
+    <generalization xmi:type="uml:Generalization" xmi:id="_6OIXMO43EeOU7dWr60eUXQ" general="_z_56YO43EeOU7dWr60eUXQ"/>
+  </packagedElement>
+</uml:Model>

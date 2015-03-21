@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sv="http://www.example.org/StateValues">
+<xs:import namespace="http://www.example.org/StateValues" schemaLocation="StateValues.xsd"/>
+
+	<xs:element name="Rules">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="rule" type="rule" minOccurs="0"
+					maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="state" abstract="true">
+		<xs:sequence>
+			<xs:element name="value" type="xs:boolean"></xs:element>
+			<xs:element name="substitutedBy" type="state" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="hierarchyMergeAction">
+		<xs:complexContent>
+			<xs:extension base="mergeAction">
+				<xs:sequence>
+					<xs:element name="mergeChildren" type="xs:boolean" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="mergeAction" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="action">
+				<xs:sequence>
+					<xs:element name="asSubDoc" type="xs:boolean" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="action" abstract="true">
+		<xs:sequence>
+			<xs:element name="dflt" type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="rule">
+		<xs:sequence>
+			<xs:element name="result" type="action" nillable="true"
+				minOccurs="1" maxOccurs="unbounded" />
+			<xs:element name="state" type="state" nillable="true"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="associationState">
+		<xs:complexContent>
+			<xs:extension base="state">
+				<xs:sequence>
+					<xs:element name="name" type="sv:associationStateEnum"></xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="hierarchyState">
+		<xs:complexContent>
+			<xs:extension base="state">
+				<xs:sequence>
+					<xs:element name="name" type="sv:hierarchyStateEnum"></xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="linkAction">
+		<xs:complexContent>
+			<xs:extension base="action">
+				<xs:sequence>
+					<xs:element name="obj1Linked" type="xs:boolean" />
+					<xs:element name="obj2Linked" type="xs:boolean" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
+

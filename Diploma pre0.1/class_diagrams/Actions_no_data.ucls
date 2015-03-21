@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.MergeAction" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/MergeAction.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="184" y="227"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.LinkAction" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/LinkAction.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="342" y="227"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.Action" 
+    project="Diploma pre0.1" file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/Action.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="265" y="154"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="false">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ua.kharkiv.knure.dimploma.interpreter.utils.actions.HierarchyMergeAction" 
+    project="Diploma pre0.1" 
+    file="/Diploma pre0.1/src/ua/kharkiv/knure/dimploma/interpreter/utils/actions/HierarchyMergeAction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="184" y="283"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="5">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="6">    
+    <bendpoint x="341" y="197"/>    
+    <bendpoint x="268" y="197"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="7">    
+    <bendpoint x="185" y="196"/>    
+    <bendpoint x="269" y="196"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

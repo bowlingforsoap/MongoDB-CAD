@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:AdditionalRestrictions
+	xmlns:tns="http://www.example.org/AdditionalRestrictions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/AdditionalRestrictions AdditionalRestrictions.xsd">
+	<tns:atomic objectXmiID="" />
+	<tns:atomic objectXmiID="" />
+	<tns:atomicityLink>
+		<tns:subjectXmiID>
+		</tns:subjectXmiID>
+		<tns:subjectXmiID>
+		</tns:subjectXmiID>
+	</tns:atomicityLink>
+	<tns:cardinality objectXmiID="">
+		<tns:property propertyXmiID="" maxAssumedCardinality="98"></tns:property>
+	</tns:cardinality>
+	<tns:multiplicity propertyXmiID="" />
+	<tns:multiplicity propertyXmiID="" />
+</tns:AdditionalRestrictions>
