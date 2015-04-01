@@ -4,7 +4,14 @@ public class Property extends Element {
 	protected Boolean isID;
 	protected String name;
 	protected String type;
+	/**
+	 * Indicates that this {@code Property} is a result of an association.
+	 */
 	protected String association;
+	/**
+	 * Indicates that this {@code Property} is a result of an aggregation of a
+	 * certain type.
+	 */
 	protected Integer aggregation;
 	protected Multiplicity multiplicity;
 

@@ -32,7 +32,6 @@ import ua.kharkiv.knure.dimploma.containers.Property;
 import ua.kharkiv.knure.dimploma.containers.Realization;
 import ua.kharkiv.knure.dimploma.containers.Relation;
 import ua.kharkiv.knure.dimploma.containers.utils.MultiplicityValue.NotValidMultiplicityException;
-import ua.kharkiv.knure.dimploma.interpreter.Interpreter;
 
 public class DOMParser {
 	private Container container;
@@ -70,12 +69,6 @@ public class DOMParser {
 			parseRelations();
 			parseAbstractions();
 			restructureObjectsNames();
-
-			for (Object object : container.getObjects().values()) {
-				/*System.out
-						.println(ua.kharkiv.knure.dimploma.final_structure.utils.Util
-								.objectToBasicDBObject(object));*/
-			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -2,18 +2,25 @@ package ua.kharkiv.knure.dimploma.final_structure;
 
 import ua.kharkiv.knure.dimploma.containers.Object;
 
+/**
+ * This class represents a Link relation between 2 objects. That is the objects
+ * are related through the link in one objects to another, vice versa or both.
+ * 
+ * @author Vadym
+ *
+ */
 public class LinkedObjects extends BoundObjects {
-	protected Object obj1;
-	protected Object obj2;
 	/**
-	 * <b>{@code obj1}</b> is linked to <b>{@code obj2}</b>
+	 * <b>{@code obj1}</b> is linked to <b>{@code obj2}</b>. Meaning there is a
+	 * link inside <b>{@code obj2}</b> pointing to <b>{@code obj1}</b>.
 	 * <p>
-	 * Note! The links (aka <b>{@code obj1Linked}</b> and <b>{@code obj2Linked}
+	 * <b>Note!</b> The links (aka <b>{@code obj1Linked}</b> and <b>{@code obj2Linked}
 	 * </b>) are not mutually exclusive.
 	 */
 	protected boolean obj1Linked;
 	/**
-	 * <b>{@code obj2}</b> is linked to <b>{@code obj1}</b>
+	 * <b>{@code obj2}</b> is linked to <b>{@code obj1}</b>. Meaning there is a
+	 * link inside <b>{@code obj1}</b> pointing to <b>{@code obj2}</b>.
 	 */
 	protected boolean obj2Linked;
 

@@ -19,7 +19,6 @@ public class Util {
 
 	public static BasicDBObject objectToBasicDBObject(Object object) {
 		BasicDBObject collection = new BasicDBObject();
-		System.out.println("object's name: " + object.getName());
 		collection.append(Util.COLLECTION_NAME, object.getName());
 		collection.append(Util.COLLECTION_ID, object.getXmiID());
 		try {
@@ -45,8 +44,6 @@ public class Util {
 				upperMultiValue = String
 						.valueOf(Multiplicity.DEFAULT_UPPER_MULTIPLICITY);
 			}
-			System.out.println("collection name: " + targetCollection.get((String)Util.COLLECTION_NAME));
-			System.out.println(targetCollection);
 			if (upperMultiValue.equals(MultiplicityValue.LOWEST)
 					|| upperMultiValue.equals(MultiplicityValue.SECOND_LOWEST)) {
 				targetCollection.append(property.getName(), property.getType());

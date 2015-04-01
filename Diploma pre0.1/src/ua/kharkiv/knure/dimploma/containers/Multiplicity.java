@@ -8,7 +8,6 @@ public class Multiplicity {
 	protected MultiplicityValue upper;
 	public static final int DEFAULT_LOWER_MULTIPLICITY = 0;
 	public static final int DEFAULT_UPPER_MULTIPLICITY = 1;
-	
 	public Multiplicity() {
 		
 	}
