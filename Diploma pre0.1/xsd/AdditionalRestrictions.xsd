@@ -3,7 +3,7 @@
 	xmlns:tns="http://www.example.org/AdditionalRestrictions"
 	elementFormDefault="qualified">
 	<element name="AdditionalRestrictions">
-		<complexType >
+		<complexType>
 			<sequence>
 				<element name="atomic" type="tns:atomic" minOccurs="0"
 					maxOccurs="unbounded" />
@@ -14,13 +14,16 @@
 				<element name="multiplicity" type="tns:multiplicity"
 					minOccurs="0" maxOccurs="unbounded" />
 			</sequence>
-		</complexType>	
+		</complexType>
 	</element>
 
+	<!-- ? -->
 	<complexType name="atomic">
 		<attribute name="objectXmiID" type="string" use="required" />
 	</complexType>
 
+	<!-- Indicates that 2 classes are to be accessed atomically, that is in 
+		one atomic operation -->
 	<complexType name="atomicityLink">
 		<sequence>
 			<element name="subjectXmiID" type="string" minOccurs="2"
@@ -28,11 +31,22 @@
 		</sequence>
 	</complexType>
 
+	<!-- Serves the purpose of clarifying the multiplicity of type: "1-n" or 
+		"n-n". If the tag is used, than the subjects of a relation (association) 
+		in question can be merged without warnings. -->
 	<complexType name="multiplicity">
 		<attribute name="upperValue" fixed="few" />
 		<attribute name="propertyXmiID" type="string" use="required" />
 	</complexType>
 
+	<!-- ? Number of not null occurrences of this field in collection. This 
+		indicates the degree of "sparseness" of the field under discussion. The logic 
+		is as follows: if 2 of n fields contain a filled cardinality property (for 
+		instance 90 and 7 respectively), than the maximum value is assumed as a basis 
+		and all the other fields with cardinality property blank take the basis value 
+		(i.e. 90). The the second field (i.e. with lower cardinality property value, 
+		7) is assumed to be present in 7 documents in the collection out of 90. This 
+		information is used during the generation of the test data. -->
 	<complexType name="cardinality">
 		<sequence>
 			<element name="property" minOccurs="1" maxOccurs="unbounded">

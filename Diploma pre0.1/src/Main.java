@@ -23,6 +23,7 @@ public class Main {
 			List<Rule<AssociationState>> associationRules = RuleInterpreter.interpretAssociationRules(null);
 			
 			Interpreter i = new Interpreter(container, hierarchyRules, associationRules);
+			//это лишнее
 			List<List<BasicDBObject>> iterpretedStructureTree = i.interpret();
 			Interpreter.print(iterpretedStructureTree);
 		} catch (Exception e) {

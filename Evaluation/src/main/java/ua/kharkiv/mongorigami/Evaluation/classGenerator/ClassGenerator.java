@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import ua.kharkiv.knure.dimploma.containers.Class;
-import ua.kharkiv.knure.dimploma.containers.Object;
 import ua.kharkiv.knure.dimploma.containers.Property;
 import ua.kharkiv.knure.dimploma.final_structure.BoundObjects;
 import ua.kharkiv.knure.dimploma.final_structure.LinkedObjects;
@@ -39,7 +38,6 @@ public class ClassGenerator {
 		LinkedList<Property> class2Properties = (LinkedList<Property>) class2.getProperties();
 		JDefinedClass definedClass1 = codeModel._class(packageName + class1.getName());
 		JDefinedClass definedClass2 = codeModel._class(packageName + class2.getName());
-		
 	}
 	
 	/**
